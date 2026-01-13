@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Missing You, Harshitha</title>
+    <style>
+        body {
+            font-family: 'Georgia', serif;
+            background: linear-gradient(135deg, #ff6b9d, #c44569, #f8b500, #ff6b9d);
+            background-size: 400% 400%;
+            animation: gradientFlow 6s ease infinite;
+            color: #fff;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+        }
+
+        @keyframes gradientFlow {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        h1 {
+            font-size: 4em;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+            animation: glow 2s ease-in-out infinite alternate;
+        }
+
+        @keyframes glow {
+            from { text-shadow: 2px 2px 4px rgba(0,0,0,0.3); }
+            to { text-shadow: 2px 2px 8px rgba(255,255,255,0.5), 0 0 20px rgba(255,107,157,0.8); }
+        }
+
+        p {
+            font-size: 1.8em;
+            max-width: 700px;
+            line-height: 1.8;
+            margin-bottom: 30px;
+            animation: fadeInUp 4s ease-out;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+        }
+
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(50px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .heart {
+            font-size: 5em;
+            color: #ff4757;
+            animation: bounce 2s infinite, pulse 1.5s infinite;
+            margin: 20px 0;
+            text-shadow: 0 0 10px rgba(255,71,87,0.8);
+        }
+
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
+            40% { transform: translateY(-10px); }
+            60% { transform: translateY(-5px); }
+        }
+
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+            100% { transform: scale(1); }
+        }
+
+        button {
+            background: linear-gradient(45deg, #ff6b9d, #f8b500);
+            color: white;
+            border: none;
+            padding: 18px 40px;
+            font-size: 1.3em;
+            font-weight: bold;
+            border-radius: 50px;
+            cursor: pointer;
+            margin-top: 30px;
+            box-shadow: 0 8px 15px rgba(0,0,0,0.2);
+            transition: all 0.3s ease;
+            animation: buttonGlow 3s ease-in-out infinite alternate;
+        }
+
+        @keyframes buttonGlow {
+            from { box-shadow: 0 8px 15px rgba(0,0,0,0.2); }
+            to { box-shadow: 0 8px 15px rgba(255,107,157,0.5), 0 0 20px rgba(248,181,0,0.3); }
+        }
+
+        button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 12px 20px rgba(0,0,0,0.3);
+        }
+
+        .floating-hearts {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            overflow: hidden;
+        }
+
+        .floating-heart {
+            position: absolute;
+            font-size: 2em;
+            color: rgba(255, 71, 87, 0.6);
+            animation: float 10s linear infinite;
+        }
+
+        @keyframes float {
+            0% { transform: translateY(100vh) rotate(0deg); opacity: 1; }
+            100% { transform: translateY(-100px) rotate(360deg); opacity: 0; }
+        }
+    </style>
+</head>
+<body>
+    <div class="floating-hearts">
+        <div class="floating-heart" style="left: 10%; animation-delay: 0s;">💖</div>
+        <div class="floating-heart" style="left: 20%; animation-delay: 2s;">💕</div>
+        <div class="floating-heart" style="left: 30%; animation-delay: 4s;">❤️</div>
+        <div class="floating-heart" style="left: 40%; animation-delay: 6s;">💖</div>
+        <div class="floating-heart" style="left: 50%; animation-delay: 8s;">💕</div>
+        <div class="floating-heart" style="left: 60%; animation-delay: 1s;">❤️</div>
+        <div class="floating-heart" style="left: 70%; animation-delay: 3s;">💖</div>
+        <div class="floating-heart" style="left: 80%; animation-delay: 5s;">💕</div>
+        <div class="floating-heart" style="left: 90%; animation-delay: 7s;">❤️</div>
+    </div>
+    <h1>Missing You, Harshitha</h1>
+    <p>Every moment without you feels like an eternity. Your smile, your laughter, the way you light up my world – I miss it all so much. Come back soon, my love. You're the missing piece in my heart. Oi ninnu chala ante chala chala miss avuthunna 😣 ni voice kosam aa snaps vintu unna.... Nuv ante chala istam harshiii.. nuv parichayam ayyi thakuva time eh but na manasuki chala close aipoyav... Lifelong nitho undali anni undhi and unta kuda elanti problems vachina ni kosam fight chesthune unta ivvi anni dialogues kadhuuu na manasulo unna mattalu... Ni kosam wait chesthunne unta avvi enni years aina ilage ninnu premisthunne untaa...</p>
+<p>"I love you more than I have ever found a way to say to you."💖</p>
+    <div class="heart">❤️</div>
+    <button onclick="showMessage()">Send a Virtual Hug</button>
+
+    <script>
+        function showMessage() {
+            alert("Hug sent! Can't wait to see you soon, Harshitha. 💕");
+            // Add a fun effect: make the heart bounce more
+            const heart = document.querySelector('.heart');
+            heart.style.animation = 'bounce 0.5s infinite, pulse 0.5s infinite';
+            setTimeout(() => {
+                heart.style.animation = 'bounce 2s infinite, pulse 1.5s infinite';
+            }, 2000);
+        }
+    </script>
+</body>
+</html>
